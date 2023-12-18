@@ -1,0 +1,2 @@
+bleak==0.21.1
+async-to-sync==0.2.3
