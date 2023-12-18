@@ -1,4 +1,4 @@
-# lywsd03mmc-client
+# lywsd03mmc client
 Python library to work with Xiaomi Temperature and Humidifier sensor using [bleak](https://pypi.org/project/bleak/) library.   
 The library is based on [LYWSD02](https://github.com/h4/lywsd02) and [lywsd03mmc
 ](https://github.com/uduncanu/lywsd03mmc).

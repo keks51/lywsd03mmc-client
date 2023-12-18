@@ -153,7 +153,6 @@ class Lywsd03mmcClient:
                 temperature_row_min=data_tuple[4],
                 humidity_min=data_tuple[5]
             )
-            print(f"Data: {data}. {data_bytes}")
             records.append(data)
 
         await self.client.start_notify(self.GET_HISTORY_DATA_ATTRIBUTE_UUID, callback)
@@ -177,9 +176,6 @@ class Lywsd03mmcClient:
             temperature_row_min=data[4],
             humidity_min=data[5]
         )
-
-    async def disconnect(self):
-        await self.__write_attribute("ebe0ccc8-7a0a-4b0c-8a1a-6ff2997da3a6")
 
     async def __get_attribute(self, attribute_name: str):
         return await self.client.read_gatt_char(attribute_name)
